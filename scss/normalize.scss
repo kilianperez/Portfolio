@@ -1,0 +1,78 @@
+@mixin flexible( $a, $b, $c, $d, $e ){
+	display: flex;
+	flex-flow: $a $b;
+	justify-content: $c;
+	align-items: $d;
+	align-content: $e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+  }
+  video {
+    display: flex;
+    object-fit: cover;
+    object-position: center center;
+  }
+  audio {
+    display: flex;
+  }
+  p a {
+    display: inline;
+  }
+  li {
+    list-style-type: none;
+  }
+  table,
+  tr,
+  td {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font:normal normal normal 100% / 140% Fakt Pro Medium, 'Roboto', sans-serif;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+  }
+  form {
+    input,
+    textarea,
+    select {
+      font: inherit;
+      hyphens: auto;
+      background-color: transparent;
+      appearance: none;
+      display: block;
+    }
+  }
